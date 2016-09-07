@@ -67,22 +67,46 @@ body, html {
 #pics {
   display: flex;
   margin: 0 auto;
-  max-width: 800px;
+  width: 600px;
   justify-content: space-around;
-  align-content: space-between;
-  flex-wrap: nowrap; }
+  align-content: space-between; }
 
 #pics figure {
-  /*display: block;*/
-  width: 180px;
-  /*margin-bottom: 20px;*/
   opacity: 0;
-  transform: translateX(-20px);
-  transition: all 0.3s ease-in-out; }
+  position: relative;
+  transform: translateX(20px);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  padding: 0;
+  overflow: hidden; }
 
 #pics figure.is-showing {
   opacity: 1;
   transform: translateX(0px); }
+
+#pics figure figcaption {
+  position: absolute;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  padding: 2px 5px;
+  width: 180px;
+  bottom: 0px;
+  left: -100%;
+  transition: all 0.3s ease-in-out; }
+
+#pics figure img {
+  display: block;
+  width: 180px;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out; }
+
+#pics figure:hover {
+  cursor: pointer; }
+  #pics figure:hover figcaption {
+    left: 0%; }
+  #pics figure:hover img {
+    transform: scale(1.1); }
 
 .large-window {
   height: 600px;
