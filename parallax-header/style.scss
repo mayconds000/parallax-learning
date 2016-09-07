@@ -1,0 +1,111 @@
+*{
+  box-sizing: border-box;
+}
+
+body, html{
+  margin: 0;
+  padding: 0;
+}
+
+
+.bear-box{
+  position: relative;
+  height: 600px;
+  background-image:  url("./images/bg.png");
+  background-repeat: no-repeat;
+  background-size: auto 600px;
+  background-position: top center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.logo  {
+  border: 5px solid black;
+  padding: 0 5px;
+  width: 300px;
+  text-align: center;
+  position: absolute;
+  margin-left: -150px;
+  left: 50%;
+  top: 50%;
+  margin-top: -60px;
+}
+
+/*.grass {
+  width: 100%;
+  height: 100%;
+  background-color: transparentize(pink, 0.4);
+  background-image: url("./images/grass.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+  position: absolute;
+  bottom: 21px;
+}*/
+
+.mother-bear{
+  width: 100%;
+  height: 600px;
+  /*background-color: transparentize(pink, 0.3);*/
+  background-image: url("./images/mother-bear.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 1080px;
+  position: absolute;
+  top: -5px;
+}
+
+.childs-bear{
+  width: 100%;
+  height: 600px;
+    /*background-color: transparentize(pink, 0.3);*/
+  background-image: url("./images/childs-bear.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 1080px;
+  position: absolute;
+  top: -5px;
+}
+
+.content{
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#pics{
+  display: flex;
+  margin: 0 auto;
+  max-width: 800px;
+  justify-content: space-around;
+  align-content: space-between;
+  flex-wrap: nowrap;
+
+}
+
+#pics figure{
+  /*display: block;*/
+  width: 180px;
+  /*margin-bottom: 20px;*/
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.3s ease-in-out;
+}
+
+#pics figure.is-showing{
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+//
+.large-window{
+  height: 600px;
+  width: 600px;
+  background-image: url("images/model-3.jpeg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
