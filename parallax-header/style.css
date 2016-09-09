@@ -110,15 +110,17 @@ body, html {
     transform: scale(1.1); }
 
 .large-window {
-  height: 600px;
-  width: 600px;
+  height: 400px;
+  width: 400px;
   background-image: url("images/model-3.jpeg");
   background-position: center 0px;
   background-repeat: repeat-y;
+  background-size: contain;
   background-attachment: fixed;
   border-radius: 50%;
   margin: 0 auto;
   margin-top: 100px;
+  margin-bottom: 100px;
   position: relative; }
   .large-window .window-tint {
     background-color: rgba(0, 0, 0, 0.5);
@@ -144,3 +146,29 @@ body, html {
         font-size: 18px;
         font-style: italic;
         color: rgba(255, 255, 255, 0.6); }
+
+.blog {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto; }
+  .blog .post {
+    padding: 0 10px;
+    width: 190px;
+    border: 1px solid #e1e1e1;
+    position: relative;
+    border-radius: 10px;
+    background-color: white; }
+    .blog .post p {
+      font-size: 12px; }
+    .blog .post img {
+      width: 170px;
+      /*height: 100px;*/
+      display: block; }
+    .blog .post button {
+      margin-bottom: 20px; }
+  .blog .post-1 {
+    transform: translate(80px, 20px); }
+  .blog .post-2 {
+    z-index: 2; }
+  .blog .post-3 {
+    transform: translate(-80px, 20px); }
